@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+.sec1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[1];
+      grid-template-rows: repeat(1, 1fr);
+}
+
+.sec1 img {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  padding-right: 3rem;
+  width: 7rem;
+}
+
+.sec1 p {
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.sec2 {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.sec2 img {
+  width: 23rem;
+}
+
+.sec2 h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.sec2 p {
+  font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.sec2 input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  width: 19rem;
+  margin: 1.3rem;
+  padding: 0.4rem;
+}
+
+.sec2 button {
+  width: 20rem;
+  background-color: #3065f8;
+  border: none;
+  padding: 0.5rem;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+.sec3 {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  background-color: #f6f6fe;
+}
+
+.sec3 img {
+  width: 23rem;
+}
+
+.sec3 h3 {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+
+.sec3 p {
+  font-family: "Open Sans", sans-serif;
+  color: #bfbfbf;
+}
+
+.sec3 a {
+  text-align: center;
+  margin-left: 6rem;
+  -webkit-text-decoration-color: #3c9f8f;
+          text-decoration-color: #3c9f8f;
+  color: #3c9f8f;
+}
+
+.sec3 a .arrow {
+  width: 1rem;
+}
+
+.sec4 {
+  background-color: #f6f6fe;
+  padding: 2rem;
+}
+
+.sec4a {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  padding: 1rem;
+  height: 10rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.7rem;
+}
+
+.sec4a .human {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 5rem;
+}
+
+.sec5 {
+  background-color: #585989;
+  height: 15rem;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.sec5 p {
+  font-family: "Open Sans", sans-serif;
+}
+
+.sec5 input {
+  width: 10rem;
+  margin-bottom: 1rem;
+  padding: 0.3rem;
+}
+
+.sec5 button {
+  width: 10.5rem;
+  background-color: #3065f8;
+  border: none;
+  color: white;
+  padding: 0.3rem;
+}
+
+.sec5 h2 {
+  font-family: "Raleway", sans-serif;
+}
+
+.sec6 {
+  background-color: #070439;
+  padding: 0.5rem;
+  color: white;
+  padding-left: 2rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+@media screen and (min-width: 1240px) {
+  .sec1 {
+    padding: 2rem;
+  }
+  .sec1 img {
+    width: 10rem;
+    padding-right: 50rem;
+  }
+  .sec2 {
+    display: -ms-grid;
+    display: grid;
+    padding: 2rem;
+    text-align: left;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+  .sec2 img {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    grid-row: 1/4;
+    width: 40rem;
+  }
+  .sec2 h2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    margin-bottom: -5rem;
+    font-size: 2.4rem;
+  }
+  .sec2 p {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  .sec2 input {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    height: 1rem;
+    border: bold black;
+    width: 18rem;
+  }
+  .sec2 button {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    height: 2rem;
+    margin-top: 1.3rem;
+    margin-left: 22rem;
+    width: 15rem;
+  }
+  .sec3 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+  .sec3 img {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    grid-row: 1/4;
+    width: 35rem;
+    margin-top: 10rem;
+  }
+  .sec3 h3 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    text-align: left;
+    padding-left: 5rem;
+    margin-top: 12rem;
+    font-size: 1.5rem;
+  }
+  .sec3 p {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    text-align: left;
+    padding: 5rem;
+  }
+  .sec3 :nth-child(4) {
+    padding-top: 1rem;
+  }
+  .sec3 a {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    text-align: left;
+    padding: 0rem;
+    margin-left: 5rem;
+  }
+  .sec4 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .sec4 .sec4a {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    margin-top: -18rem;
+    width: 20rem;
+    margin-left: 3rem;
+  }
+  .sec5 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+  .sec5 h2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    text-align: left;
+    margin-top: 4rem;
+    margin-left: 5rem;
+  }
+  .sec5 p {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    grid-row: 2;
+    text-align: left;
+    padding: 5rem;
+    margin-top: -4rem;
+    padding-top: 1rem;
+  }
+  .sec5 input {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    text-align: center;
+    width: 19rem;
+    height: 2rem;
+    margin-left: 15rem;
+    margin-top: 5rem;
+  }
+  .sec5 button {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 2;
+    grid-row: 2;
+    text-align: center;
+    width: 10rem;
+    height: 2rem;
+    margin-left: 15rem;
+  }
+  .sec6 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .sec6 p {
+    margin-right: 10rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

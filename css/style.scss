@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+$VeryDarkBlue: hsl(243, 87%, 12%);
+$DesaturatedBlue: hsl(238, 22%, 44%);
+$BrightBlue: hsl(224, 93%, 58%);
+$ModerateCyan: hsl(170, 45%, 43%);
+$LightGrayishBlue: hsl(240, 75%, 98%);
+$LightGray: hsl(0, 0%, 75%);
+$font1:  'Raleway', sans-serif;
+$font2:  'Open Sans', sans-serif;
+
+.sec1{
+    display: grid;
+    grid-template-rows: repeat(1 ,1fr);
+    img{
+        grid-row: 1;
+        padding-right: 3rem;
+        width: 7rem;
+    }
+    p{
+        grid-row: 1;
+    }
+}
+
+.sec2{
+    text-align: center;
+    margin-bottom: 6rem;
+    
+    img{
+        width: 23rem;
+        
+    }
+    h2{
+        font-family: $font1;
+        font-weight: 700;
+        font-size: 1.8rem;
+    }
+    p{
+        font-size: 1.2rem; 
+        font-family: $font2;
+    }
+    input{
+        display: flex;
+        gap: 2rem;
+        width: 19rem;
+        margin: 1.3rem;
+        padding: 0.4rem;
+    }
+    button{
+        width: 20rem;
+        background-color: $BrightBlue;
+        border: none;
+        padding: 0.5rem;
+        color: white;
+        font-family: $font2;
+    }
+}
+.sec3{
+    margin-top: 2rem;
+    padding-top: 1rem;
+    background-color: $LightGrayishBlue;
+    img{
+        width: 23rem;
+    }
+    h3{
+        font-family: $font1;
+        text-align: center;
+    }
+    p{
+        font-family: $font2;
+        color: $LightGray;
+    }
+    a{
+        text-align: center;
+        margin-left: 6rem;
+        text-decoration-color: $ModerateCyan;
+        color: $ModerateCyan;
+        .arrow{
+            width: 1rem;
+        }
+    }
+}
+
+.sec4{
+    background-color: $LightGrayishBlue;
+    padding: 2rem;
+}
+.sec4a{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 1rem;
+    padding: 1rem;
+    height: 10rem;
+    
+    font-family: $font2;
+    font-size: 0.7rem;
+    
+    .human{
+        width: 2rem;
+        height: 2rem;
+        border-radius: 5rem;
+    }
+}
+
+.sec5{
+    background-color: $DesaturatedBlue;
+    height: 15rem;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    padding-bottom: 2rem;
+    p{
+        font-family: $font2;
+    }
+    input{
+        width: 10rem;
+        margin-bottom: 1rem;
+        padding: 0.3rem;
+    }
+    button{
+        width: 10.5rem;
+        background-color: $BrightBlue; 
+        border: none;
+        color: white;
+        padding: 0.3rem;
+    }
+    h2{
+        font-family: $font1;
+    }
+}
+
+.sec6{
+    background-color: $VeryDarkBlue ;
+    padding: 0.5rem;
+    color: white;
+    padding-left: 2rem;
+    font-family: $font2;
+}
+
+@media screen and (min-width: 1240px){
+    .sec1{
+        padding: 2rem;
+        img{
+            width: 10rem;
+            padding-right: 50rem;
+        }
+    }
+    .sec2{
+        display: grid;
+        padding: 2rem;
+        text-align: left;
+        grid-template-columns: repeat(2 , 1fr);
+        grid-template-rows: repeat(3 ,1fr);
+        img{
+            grid-column: 2/3;
+            grid-row: 1/4;
+            width: 40rem;
+        }
+        h2{
+            grid-column: 1/2;
+            grid-row: 1/2;
+            margin-bottom: -5rem;
+            font-size: 2.4rem;
+        }
+        p{
+            grid-column: 1/2;
+            grid-row: 2/3;  
+        }
+        input{
+            grid-column: 1/2;
+            grid-row: 3/4; 
+            height: 1rem;
+            border: bold black ;
+            width: 18rem;
+        }
+        button{
+            grid-column: 1/2;
+            grid-row: 3/4; 
+            height: 2rem;
+            margin-top: 1.3rem;
+            margin-left: 22rem;
+            width: 15rem;
+        }
+    }
+    .sec3{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        grid-template-rows: repeat(3 ,1fr);
+        
+        img{
+            grid-column: 2/3;
+            grid-row: 1/4;
+            width: 35rem;
+            margin-top: 10rem;
+        }
+        h3{
+            grid-column: 1/2;
+            grid-row: 1/2;
+            text-align: left;
+            padding-left: 5rem;
+            margin-top: 12rem;
+            font-size: 1.5rem;
+        }
+        p{
+            grid-column: 1/2;
+            grid-row: 2/3;
+            text-align: left;
+            padding: 5rem;
+        }
+        :nth-child(4){
+            padding-top: 1rem;
+            
+        }
+        a{
+            grid-column: 1/2;
+            grid-row: 2/3;
+            text-align: left;
+            padding: 0rem; 
+            margin-left: 5rem;
+        }
+    }
+    .sec4{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        .sec4a{
+            grid-column: 1/2;
+            margin-top: -18rem;
+            width: 20rem;
+            margin-left: 3rem;
+        }
+    }
+
+    .sec5{
+        display: grid;
+        grid-template-columns: repeat( 2 , 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        h2{
+            grid-column: 1/2;
+            grid-row: 1;
+            text-align: left;
+            margin-top: 4rem;
+            margin-left: 5rem;
+        }
+        p{
+            grid-column: 1/2;
+            grid-row: 2; 
+            text-align: left;
+            padding: 5rem;
+            margin-top: -4rem;
+            padding-top: 1rem;
+        }
+        input{
+            grid-column: 2/3;
+            grid-row: 1;
+            text-align: center;
+            width: 19rem;
+            height: 2rem;
+            margin-left: 15rem;
+            margin-top: 5rem;
+        }
+        button{
+            grid-column: 2/3;
+            grid-row: 2;
+            text-align: center;
+            width: 10rem;
+            height: 2rem;
+            margin-left: 15rem;
+        }
+    }
+    .sec6{
+        display: flex;
+        p{
+            margin-right: 10rem;
+        }
+    }
+}
